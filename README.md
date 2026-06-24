@@ -1,4 +1,4 @@
-# Controle-de-Estoque.-Ci-ncia-de-dados-
+(# Controle-de-Estoque.-Ci-ncia-de-dados-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -23,6 +23,30 @@
    box shadow: 0 0 10px #ccc;
  }
 
- input{
+ input{ 
+   padding: 8px;
+   margin: 5px;
+   widht: calc(100%-20px);
+}
+
+button {
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer; 
+  width: 100%;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+
+table,th,td {
+  border
+
+   
   </style>
 </head>
