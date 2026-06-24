@@ -45,8 +45,49 @@ table {
 }
 
 table,th,td {
-  border
+  border: 1px solid #ccc
+  text-align: center;
+}
 
-   
+th,td {
+  padding: 10px
+}
+
+.delete {
+ background: red;
+ padding: 5px;
+ color: white;
+ cursor: pointer;
+ border: none;
+}
   </style>
 </head>
+</body>
+
+<div class="container">
+ <h1>ControledeEstoque</h1>
+
+ <input type="text" id="produto" placeholder="Nome do produto">
+ <input type="number" id="quantidade" placeholder="Quantidade">
+
+ <button onclick="adicionarProduto()">Adicionar Produto</button>
+
+ <table>
+   <thead>
+     <tr>
+       <th>Produto</th>
+       <th>Quantidade</th>
+       <th>Ação</th>
+     </tr>
+   </thead>
+   <tbody id="tabelaEstoque"></tbody>
+ </table>
+</div>
+
+<script>
+  let estoque = JSON.parse(localStorage.getItem("estoque")) || [];
+
+  function salvar() {
+    localStorage.setItem("estoque", JSON.stringify(estoque));
+  }
+  /script>
